@@ -1,0 +1,296 @@
+body {
+    font-family: 'roboto_slabregular';
+}
+
+#txtReloj h2 {
+    font-family: 'roboto_slabbold';
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'roboto_slabbold';
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'roboto_slabbold';
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+
+    /*    Propiedad de recorte para formas.   */
+
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    -ms-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+    /*    Propiedad para color de degradados.    */
+
+    background: rgba(18, 112, 227, 1);
+    background: -moz-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18, 112, 227, 1)), color-stop(100%, rgba(89, 194, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1270e3', endColorstr='#59c2ff', GradientType=1);
+
+}
+
+.contenedor {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    /*    flex-direction: row;    */
+    /*    flex-wrap: wrap;    */
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#logoNav {
+    flex: 0 1 120px;
+}
+
+#MenuDesktop {
+    display: flex;
+    flex: 0 1 50%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+#MenuDesktop a {
+    color: white;
+    text-decoration: none;
+}
+
+#MenuDesktop a.buy {
+    background: rgba(241, 231, 103, 1);
+    background: -moz-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241, 231, 103, 1)), color-stop(100%, rgba(254, 182, 69, 1)));
+    background: -webkit-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -o-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: linear-gradient(to right, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1e767', endColorstr='#feb645', GradientType=1);
+
+    display: flex;
+    width: 115px;
+    height: 40px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+
+}
+
+#contenedor-header {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#relojHeader {
+    flex: 0 1 100%;
+    order: 2;
+}
+
+#txtReloj {
+    flex: 0 1 10%;
+    align-self: flex-start;
+    order: 1;
+}
+
+#txtReloj h2 {
+    font-size: 3.5rem;
+}
+
+.img-responsive {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#txtReloj p {
+    color: white;
+    font-family: 'roboto_slabthin';
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.buy {
+    background: rgba(241, 231, 103, 1);
+    background: -moz-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241, 231, 103, 1)), color-stop(100%, rgba(254, 182, 69, 1)));
+    background: -webkit-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -o-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    background: linear-gradient(to right, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1e767', endColorstr='#feb645', GradientType=1);
+
+    display: flex;
+    width: 115px;
+    height: 40px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    text-decoration: none;
+}
+
+#features {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.contenedor-features {
+    margin: 2rem 0;
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.boxFeatures {
+    margin: 1rem 0;
+    flex: 0 1 100%;
+}
+
+.serv-icon {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#features h2 {
+    flex-basis: 100%;
+}
+
+.pFeatures {
+    flex-basis: 100%;
+    align-self: center;
+    align-items: center;
+}
+
+.full {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    padding: 3rem 0;
+}
+
+#products {
+    background-color: deeppink;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+
+    background: rgba(245, 49, 127, 1);
+    background: -moz-linear-gradient(left, rgba(245, 49, 127, 1) 0%, rgba(255, 124, 110, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(245, 49, 127, 1)), color-stop(100%, rgba(255, 124, 110, 1)));
+    background: -webkit-linear-gradient(left, rgba(245, 49, 127, 1) 0%, rgba(255, 124, 110, 1) 100%);
+    background: -o-linear-gradient(left, rgba(245, 49, 127, 1) 0%, rgba(255, 124, 110, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(245, 49, 127, 1) 0%, rgba(255, 124, 110, 1) 100%);
+    background: linear-gradient(to right, rgba(245, 49, 127, 1) 0%, rgba(255, 124, 110, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5317f', endColorstr='#ff7c6e', GradientType=1);
+
+}
+
+#products h2 {
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 2rem;
+    color: white;
+    order: 2;
+}
+
+.imgProduct {
+    flex-basis: 100%;
+    order: 1;
+    padding-top: 12rem;
+}
+
+.txtProduct {
+    flex-basis: 100%;
+    order: 3;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.txtProduct h3 {
+    text-align: left;
+    color: white;
+}
+
+.iconProduct {
+    flex: 0 1 15%;
+    padding: 1.5rem;
+}
+
+.descriptionProduct {
+    flex-flow: row wrap;
+    flex: 0 1 100%;
+    justify-content: space-between;
+    align-content: space-around;
+    display: flex;
+}
+
+.txtIcon {
+    flex: 0 1 70%;
+}
+
+.separador {
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+
+#about {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.cajaAbout {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.cajaAbout h2 {
+    text-align: left;
+}
+
+#products2 {
+    background-color: deeppink;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+
+
+    background: rgba(104, 89, 234, 1);
+    background: -moz-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(104, 89, 234, 1)), color-stop(100%, rgba(106, 203, 224, 1)));
+    background: -webkit-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -o-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: linear-gradient(to right, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6859ea', endColorstr='#6acbe0', GradientType=1);
+
+}

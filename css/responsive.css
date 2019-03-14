@@ -1,0 +1,156 @@
+/*  Media queries celulares de gama alta. */
+
+@media only screen and (min-width:150px) {
+    html {
+        font-size: 13px;
+    }
+
+    a.buy {
+        margin: auto;
+    }
+
+    .serv-icon {
+        width: 25%;
+    }
+
+}
+
+/*  Media queries celulares de gama alta. */
+
+@media only screen and (min-width:680px) {
+    html {
+        font-size: 13px;
+    }
+
+    .boxFeatures {
+        margin: 1rem 0;
+        flex: 0 1 calc(50% - 1rem);
+    }
+
+    .serv-icon {
+        width: 25%;
+    }
+
+}
+
+/*  Media queries tableta. */
+
+@media only screen and (min-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+    #contenedor-header {
+        flex: 0 1 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    #relojHeader {
+        flex: 0 1 calc(50% - 1rem);
+        order: 1;
+    }
+
+    #txtReloj {
+        flex: 0 1 calc(50% - 1rem);
+        order: 2;
+    }
+
+    a.buy {
+        margin: 0;
+    }
+
+    .serv-icon {
+        width: 20%;
+    }
+
+    .txtProduct{
+    padding-bottom: 0;
+}
+
+    .iconProduct {
+        flex: 0 1 10%;
+        padding: 1.5rem;
+    }
+
+    .descriptionProduct {
+        flex-flow: row wrap;
+        flex: 0 1 100%;
+        justify-content: space-between;
+        align-content: space-around;
+        display: flex;
+    }
+
+    .txtIcon {
+        flex: 0 1 80%;
+    }
+
+}
+
+/*  Media queries laptop. */
+
+@media only screen and (min-width:992px) {
+    html {
+        font-size: 15px;
+    }
+
+    a.buy {
+        margin: 0;
+    }
+
+    .boxFeatures {
+        margin: 1rem 0;
+        flex: 0 1 calc(33% - 1rem);
+    }
+
+    .serv-icon {
+        width: 30%;
+    }
+
+    .pFeatures {
+    flex-basis: 0 1 calc(50% - 1rem);
+        text-align: center;
+        align-self: center;
+        align-items: center;
+}
+
+    #products h2 {
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 2rem;
+        color: white;
+        order: 1;
+        padding-top: 6rem;
+    }
+
+    .imgProduct {
+        flex: 0 1 calc(50% - 1rem);
+        order: 2;
+        padding: 0;
+    }
+
+    .txtProduct {
+        flex: 0 1 calc(50% - 1rem);
+        order: 3;
+        text-align: left;
+    }
+
+    .txtProduct h3 {
+        text-align: left;
+    }
+
+}
+
+/*  Media queries desktop. */
+
+@media only screen and (min-width:1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    a.buy {
+        margin: 0;
+    }
+}
