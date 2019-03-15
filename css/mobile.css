@@ -2,6 +2,10 @@ body {
     font-family: 'roboto_slabregular';
 }
 
+:root{
+    --colorIcono: #ff8a4c;
+}
+
 #txtReloj h2 {
     font-family: 'roboto_slabbold';
     font-size: 2rem;
@@ -19,6 +23,10 @@ h3 {
     font-family: 'roboto_slabbold';
     text-align: center;
     font-size: 1.5rem;
+}
+
+h5 {
+    font-family: 'roboto_slablight'
 }
 
 
@@ -53,6 +61,10 @@ header {
     display: flex;
     flex-flow: row wrap;
     height: 100%;
+}
+
+.contenedor-products {
+    justify-content: space-around;
 }
 
 nav {
@@ -281,7 +293,7 @@ nav {
 
 #products2 {
     background-color: deeppink;
-    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
 
 
     background: rgba(104, 89, 234, 1);
@@ -293,4 +305,105 @@ nav {
     background: linear-gradient(to right, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6859ea', endColorstr='#6acbe0', GradientType=1);
 
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+
+}
+
+.title {
+    margin-top: 20rem;
+    flex-basis: 100%;
+    color: white;
+}
+
+.txtProducts {
+    color: white;
+    font-size: 1rem;
+    flex-basis: 100%;
+    padding: 20px 50px;
+    margin-bottom: 4rem;
+}
+
+.cajaProduct {
+    flex: 0 1 100%;
+    justify-content: space-around;
+    margin-bottom: 18rem;
+}
+
+.titleProduct {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cajaProduct h5 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buyProduct {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.formIcon i {
+    font-size: 1.75rem;
+    color: var(--colorIcono);
+}
+
+#contacto {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.box50 {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.nombre {
+    display: flex;
+    flex: 0 1 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo {
+    flex: 0 1 70%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formInput {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formIcon {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
